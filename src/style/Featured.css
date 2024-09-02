@@ -29,7 +29,6 @@
     width: 100%;
     margin-bottom: 15px;
   }
-
 }
 
 #features .container .image-holder > img {
@@ -100,8 +99,28 @@
   color: var(--mainColor);
 }
 
+#features .container .info .card p[data-id] {
+  max-height: 0;
+  margin-bottom: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+#features .container .info .card p[data-id].active {
+  max-height: 100px;
+}
+
 #features .container .info .card .card-body {
   padding-bottom: 15px;
+}
+
+#features .container .info .card .card-body .border {
+  margin-bottom: 20px;
   border-bottom: 1px solid var(--secondColor);
 }
 
@@ -118,7 +137,23 @@
 }
 
 #features .container .info .card h4 {
+  padding-bottom: 0;
   font-weight: 600;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+#features .container .info .card h4.active {
+  font-size: 18px;
+  color: var(--mainColor);
+}
+
+#features .container .info .card [data-para] {
+  cursor: pointer;
+  color: #2f2f2f;
 }
 
 #features .container .offers {

@@ -41,14 +41,26 @@ const Contact = () => {
 
         <div className="form">
           <form action="">
-            <label htmlFor="">Full Name</label>
-            <input type="text" placeholder='Your Name...' />
-            <label htmlFor="">Email Address</label>
-            <input type="email" placeholder='Your E-mail...' />
-            <label htmlFor="">Subject</label>
-            <input type="text" placeholder='Subject' />
-            <label htmlFor="">Message</label>
-            <input className='textarea' name="" id="" placeholder='Your Message'></input>
+            <div>
+              <label htmlFor="">Full Name</label>
+              <input type="text" placeholder='Your Name...' />
+            </div>
+
+            <div>
+              <label htmlFor="">Email Address</label>
+              <input type="email" placeholder='Your E-mail...' />
+            </div>
+
+            <div>
+              <label htmlFor="">Subject</label>
+              <input type="text" placeholder='Subject' />
+            </div>
+
+            <div>
+              <label htmlFor="">Message</label>
+              <textarea name="" id="" placeholder='Your Message'></textarea>
+            </div>
+
             <button>Send Message</button>
           </form>
         </div>

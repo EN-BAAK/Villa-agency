@@ -7,7 +7,9 @@
   --mainTransparent: #ef3c061f;
   --smoke: #d5d1d13e;
   /* background-color: aqua; */
-  font-family: "Poppins", sans-serif;
+}
+body {
+  font-family: "Roboto", sans-serif;
 }
 /* var(--mainColor) */
 li {

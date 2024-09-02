@@ -1,0 +1,101 @@
+[
+  {
+      "uri": "path/to/Img1.jpg",
+      "type": "Villa House",
+      "cast": "$2.264.000",
+      "title": "18 New Street Miami, OR 97219",
+      "numberOfBedrooms": 8,
+      "numberOfBathrooms": 8,
+      "area": "545m2",
+      "floor": "3",
+      "parking": "6 spots"
+  },
+  {
+      "uri": "path/to/Img2.jpg",
+      "type": "Villa House",
+      "cast": "$1.180.000",
+      "title": "54 Mid Street Florida, OR 27001",
+      "numberOfBedrooms": 6,
+      "numberOfBathrooms": 5,
+      "area": "450m2",
+      "floor": "3",
+      "parking": "8 spots"
+  },
+  {
+      "uri": "path/to/Img3.jpg",
+      "type": "Villa House",
+      "cast": "$1.460.000",
+      "title": "26 Mid Street Portland, OR 38540",
+      "numberOfBedrooms": 5,
+      "numberOfBathrooms": 4,
+      "area": "225m2",
+      "floor": "3",
+      "parking": "10 spots"
+  },
+  {
+      "uri": "path/to/Img4.jpg",
+      "type": "Apartment",
+      "cast": "$584.500",
+      "title": "12 Hope Street Portland, OR 12650",
+      "numberOfBedrooms": 4,
+      "numberOfBathrooms": 3,
+      "area": "125m2",
+      "floor": "25th",
+      "parking": "2 cars"
+  },
+  {
+      "uri": "path/to/Img5.jpg",
+      "type": "Penthouse",
+      "cast": "$925.600",
+      "title": "34 Hope Street Portland, OR 42680",
+      "numberOfBedrooms": 4,
+      "numberOfBathrooms": 4,
+      "area": "180m2",
+      "floor": "38th",
+      "parking": "2 cars"
+  },
+  {
+      "uri": "path/to/Img6.jpg",
+      "type": "Penthouse",
+      "cast": "$450.000",
+      "title": "22 New Street Portland, OR 16450",
+      "numberOfBedrooms": 3,
+      "numberOfBathrooms": 2,
+      "area": "165m2",
+      "floor": "26th",
+      "parking": "3 cars"
+  },
+  {
+      "uri": "path/to/Img7.jpg",
+      "type": "Apartment",
+      "cast": "$980.000",
+      "title": "14 Mid Street Miami, OR 36450",
+      "numberOfBedrooms": 8,
+      "numberOfBathrooms": 8,
+      "area": "550m2",
+      "floor": "3",
+      "parking": "12 spots"
+  },
+  {
+      "uri": "path/to/Img8.jpg",
+      "type": "Apartment",
+      "cast": "$1.520.000",
+      "title": "26 Old Street Miami, OR 12870",
+      "numberOfBedrooms": 12,
+      "numberOfBathrooms": 15,
+      "area": "380m2",
+      "floor": "3",
+      "parking": "14 spots"
+  },
+  {
+      "uri": "path/to/Img9.jpg",
+      "type": "Apartment",
+      "cast": "$450.000",
+      "title": "34 New Street Miami, OR 24650",
+      "numberOfBedrooms": 10,
+      "numberOfBathrooms": 12,
+      "area": "860m2",
+      "floor": "3",
+      "parking": "10 spots"
+  }
+]

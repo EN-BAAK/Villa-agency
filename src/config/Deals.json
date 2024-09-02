@@ -1,0 +1,20 @@
+{"info" : [
+    {
+        "totalFlatSpace" : "185 m2",
+        "floorNumber" : "26th",
+        "numberOfRooms" : "4"
+    },
+    {
+        "totalFlatSpace" : "250 m2",
+        "floorNumber" : "26th",
+        "numberOfRooms" : "5"
+    },
+    {
+        "totalFlatSpace" : "320 m2",
+        "floorNumber" : "34th",
+        "numberOfRooms" : "6"
+    }
+],
+"types" : ["Appartment", "Villa House", "pentHouse"],
+"titles" : ["Extra Info About Property", "Extra Info About Villa", "Extra Info About Penthouse"]
+}
