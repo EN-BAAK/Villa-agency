@@ -1,0 +1,247 @@
+.topNav {
+  height: 80px;
+}
+
+@media (min-width: 992px) {
+  .topNav {
+    height: 130px;
+  }
+}
+
+.topNav section {
+  background-color: #fff;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topNav nav {
+  /* width: 100%; */
+  height: 80px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.topNav .top-bar,
+.topNav nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10% 5px 10%;
+}
+
+.topNav .top-bar {
+  height: 50px;
+  border-bottom: 1px solid var(--secondColor);
+}
+
+.topNav .reach-out,
+.topNav .social,
+.topNav nav .items,
+.topNav nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.topNav nav .items,
+.topNav nav ul {
+  gap: 35px;
+}
+
+.topNav ul li:hover {
+  color: var(--mainColor);
+  cursor: pointer;
+}
+
+.topNav .reach-out svg {
+  margin-right: 10px;
+  color: var(--mainColor);
+}
+
+.topNav .reach-out li {
+  color: var(--secondColor);
+}
+
+.topNav .top-bar .reach-out li {
+  margin-right: 0.5rem;
+}
+
+.topNav .column {
+  padding-right: 8px;
+  border-right: 1px solid var(--secondColor);
+}
+
+.topNav svg {
+  width: 16px;
+  height: 16px;
+}
+
+.topNav .social span {
+  width: fit-content;
+  height: fit-content;
+  align-content: center;
+  display: flex;
+  color: white;
+  background-color: #ddd;
+  border: 10px solid #ddd;
+  border-radius: 50px;
+}
+
+.topNav .social li {
+  display: flex;
+  margin-left: 0.5rem;
+}
+
+.topNav .btn {
+  position: relative;
+  /* overflow: hidden; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 50px;
+  background-color: black;
+  z-index: 1;
+  padding-left: 40px;
+}
+
+.topNav .circle svg {
+  color: #fff;
+  width: 14px;
+  height: 14px;
+}
+
+.topNav .circle {
+  background-color: var(--mainColor);
+  border: 10px solid var(--mainColor);
+  border-radius: 50px;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  left: -1.6px;
+  top: -1.6px;
+  z-index: 2;
+  transition: 0.5s cubic-bezier(1, 0, 0.8, 1);
+}
+
+.topNav .btn:hover .circle {
+  cursor: pointer;
+  width: 160px;
+}
+
+.topNav .calander {
+  transition: 0.5s;
+}
+
+.topNav .text {
+  /* width: 100px; */
+  /* margin-left: 30px; */
+  text-align: center;
+  flex-flow: nowrap;
+  color: #ddd;
+}
+
+.topNav nav .bar {
+  background: none;
+  border: none;
+  display: none;
+  color: var(--secondColor);
+}
+
+@media screen and (max-width: 992px) {
+  .topNav nav .bar {
+    display: block;
+  }
+  /* .topNav .reach-out,
+  .topNav .social, */
+  .topNav .top-bar,
+  .topNav nav .items,
+  .topNav .nav-menu {
+    display: none;
+  }
+}
+
+.topNav .nav-menu {
+  width: 100%;
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translateX(150%);
+  /* transform: translateY(-150%); */
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 20px 14px;
+  transition: 1s all;
+  z-index: 10011;
+}
+
+.topNav .nav-menu .items ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* flex-wrap: nowrap; */
+  width: fit-content;
+  gap: 30px;
+  /* padding: 20px 14px; */
+}
+
+.topNav .nav-menu .items ul li {
+  width: 100%;
+  height: 10%;
+  padding: 20px 14px;
+  gap: 30px;
+}
+
+/* .topNav .nav-menu .top-bar ul .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: fit-content;
+} */
+
+.topNav .nav-menu ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.topNav .nav-menu .btn {
+  display: flex;
+  padding-left: 0;
+  justify-content: center;
+}
+
+.topNav .nav-menu ul li,
+.topNav .nav-menu .btn {
+  width: 100%;
+  background: none;
+  border: none;
+}
+
+.topNav .nav-menu.active {
+  transform: translate(-50%);
+}
+
+.topNav .nav-menu svg {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  align-content: center;
+}
+
+.topNav .nav-menu .column {
+  padding-bottom: 34px;
+}

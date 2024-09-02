@@ -1,0 +1,53 @@
+:root {
+  --mainColor: #f35525;
+  --secondColor: #a7a7a7;
+  --thirdColor: #2f2f2f;
+  --transparent: #ffffff2a;
+  --transparentHover: #ffffff22;
+  --mainTransparent: #ef3c061f;
+  --smoke: #d5d1d13e;
+  /* background-color: aqua; */
+  font-family: "Poppins", sans-serif;
+}
+/* var(--mainColor) */
+li {
+  list-style: none;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+/* a:hover {
+  visi
+} */
+/* .container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+} */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
