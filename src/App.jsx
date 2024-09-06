@@ -6,11 +6,13 @@ import Deals from "./components/Deals"
 import Properties from "./components/Properties"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+// import TopBar from "./components/TopBar"
 
 function App() {
 
   return (
     <>
+      {/* <TopBar /> */}
       <NavBar />
       <Hero />
       <Featured />
