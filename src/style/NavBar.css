@@ -12,6 +12,7 @@
 #navbar .container .hold-right {
   display: flex;
   align-items: center;
+  gap: 30px;
 }
 
 .menu {

@@ -6,13 +6,10 @@ import ic1 from "../../assets/info-icon-01.png";
 import ic2 from "../../assets/info-icon-02.png";
 import ic3 from "../../assets/info-icon-03.png";
 import ic4 from "../../assets/info-icon-04.png";
+import Accordion from '../Accordion';
 
 const Featured = () => {
   const [activeParagraph, setActiveParagraph] = useState(null);
-
-  const toggleActive = (paraId) => {
-    setActiveParagraph(activeParagraph === paraId ? null : paraId);
-  };
 
   return (
     <div id="features">
@@ -30,23 +27,37 @@ const Featured = () => {
 
           <div className="card">
             <div className="card-body">
-              <div className="border">
-                <h4 onClick={() => toggleActive("p3")} data-para="p3" className={`${activeParagraph === "p3" ? "active" : ""}`}>Best useful links ?</h4>
-                <p className={activeParagraph === "p3" ? "active" : ""} data-id="p3">
-                  Get <span className="bold">the best villa</span> website
-                  template in HTML CSS and Bootstrap for your business. templateMo
-                  provides you the <a>best free CSS templates</a> in the world.
-                  please tell your friends about it.
-                </p>
-              </div>
 
-              <div className='border'>
-                <h4 onClick={() => toggleActive("p1")} data-para="p1" className={`${activeParagraph === "p1" ? "active" : ""}`}>How does this word ?</h4>
-                <p className={activeParagraph === "p1" ? "active" : ""} data-id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quibusdam fugit accusantium odit tenetur perferendis!</p>
-              </div>
+              <Accordion
+                title='Best useful links ?'
+                id={1}
+                selectedId={activeParagraph}
+                handleClick={(id) => setActiveParagraph(id)}
+              >
+                Get <span className="bold">the best villa</span> website
+                template in HTML CSS and Bootstrap for your business. templateMo
+                provides you the <a>best free CSS templates</a> in the world.
+                please tell your friends about it.
+              </Accordion>
 
-              <h4 onClick={() => toggleActive("p2")} className={`${activeParagraph === "p2" ? "active" : ""} card-footer`} data-para="p2">Why is Villa Agency the best ?</h4>
-              <p className={activeParagraph === "p2" ? "active" : ""} data-id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quod molestias exercitationem nam aut velit?</p>
+
+              <Accordion
+                title='How does this word ?'
+                id={2}
+                selectedId={activeParagraph}
+                handleClick={(id) => setActiveParagraph(id)}
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quibusdam fugit accusantium odit tenetur perferendis!
+              </Accordion>
+
+              <Accordion
+                title='Why is Villa Agency the best ?'
+                id={3}
+                selectedId={activeParagraph}
+                handleClick={(id) => setActiveParagraph(id)}
+              >
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde quod molestias exercitationem nam aut velit?
+              </Accordion>
             </div>
 
           </div>
@@ -85,7 +96,7 @@ const Featured = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </div >
   );
 };
 

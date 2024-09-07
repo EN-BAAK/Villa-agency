@@ -1,20 +1,31 @@
-{"info" : [
+{
+  "info": [
     {
-        "totalFlatSpace" : "185 m2",
-        "floorNumber" : "26th",
-        "numberOfRooms" : "4"
+      "Total Flat Space": "185 m2",
+      "Floor Number": "26th",
+      "Number Of Rooms": "4",
+      "Available": true,
+      "Process": "Bank"
     },
     {
-        "totalFlatSpace" : "250 m2",
-        "floorNumber" : "26th",
-        "numberOfRooms" : "5"
+      "Total Flat Space": "250 m2",
+      "Floor Number": "26th",
+      "Number Of Rooms": "5",
+      "Available": false,
+      "Process": "Bank"
     },
     {
-        "totalFlatSpace" : "320 m2",
-        "floorNumber" : "34th",
-        "numberOfRooms" : "6"
+      "Total Flat Space": "320 m2",
+      "Floor Number": "34th",
+      "Number Of Rooms": "6",
+      "Available": true,
+      "Process": "Bank"
     }
-],
-"types" : ["Appartment", "Villa House", "pentHouse"],
-"titles" : ["Extra Info About Property", "Extra Info About Villa", "Extra Info About Penthouse"]
+  ],
+  "types": ["Appartment", "Villa House", "pentHouse"],
+  "titles": [
+    "Extra Info About Property",
+    "Extra Info About Villa",
+    "Extra Info About Penthouse"
+  ]
 }

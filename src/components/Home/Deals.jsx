@@ -3,7 +3,9 @@ import data from "../../config/Deals.json";
 import img1 from "../../assets/property-05.jpg";
 import img2 from "../../assets/property-06.jpg";
 import img3 from "../../assets/property-03.jpg";
+import VisitButton from "../VisitButton"
 import { useState } from "react";
+import Specifications from "../Specifications";
 const images = [img1, img2, img3];
 const Deals = () => {
   const [typeIndex, settypeIndex] = useState(0);
@@ -30,32 +32,11 @@ const Deals = () => {
         </div>
 
         <div className="content">
-          <ul>
-            <li>
-              <p className="gray">Total flat space</p>
-              <p className="black">{data.info[typeIndex].totalFlatSpace}</p>
-            </li>
 
-            <li>
-              <p className="gray">Floor number</p>
-              <p className="black">{data.info[typeIndex].floorNumber}</p>
-            </li>
-
-            <li>
-              <p className="gray">Number of rooms</p>
-              <p className="black">{data.info[typeIndex].numberOfRooms}</p>
-            </li>
-
-            <li>
-              <p className="gray">Parking Available</p>
-              <p className="black">Yes</p>
-            </li>
-
-            <li>
-              <p className="gray">Payment process</p>
-              <p className="black">Bank</p>
-            </li>
-          </ul>
+          {data.info.length &&
+            <Specifications
+              props={data.info[typeIndex]}
+            />}
 
           <div className="image-holder">
             <img src={images[typeIndex]} />
@@ -75,12 +56,7 @@ const Deals = () => {
               dicta doloribus quos iusto ratione earum?
             </p>
 
-            <div className="btn">
-              <div className="circle">
-                <i className="fa-solid fa-calendar"></i>
-              </div>
-              <p>Schedule a visit</p>
-            </div>
+            <VisitButton />
           </div>
         </div>
       </div>
