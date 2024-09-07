@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import "../style/Featured.css";
-import feaImg from "../assets/featured.jpg";
-import feaIcon from "../assets/featured-icon.png";
-import ic1 from "../assets/info-icon-01.png";
-import ic2 from "../assets/info-icon-02.png";
-import ic3 from "../assets/info-icon-03.png";
-import ic4 from "../assets/info-icon-04.png";
+import "../../style/Featured.css";
+import feaImg from "../../assets/featured.jpg";
+import feaIcon from "../../assets/featured-icon.png";
+import ic1 from "../../assets/info-icon-01.png";
+import ic2 from "../../assets/info-icon-02.png";
+import ic3 from "../../assets/info-icon-03.png";
+import ic4 from "../../assets/info-icon-04.png";
 
 const Featured = () => {
   const [activeParagraph, setActiveParagraph] = useState(null);

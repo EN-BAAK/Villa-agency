@@ -1,7 +1,7 @@
-import "../style/Contact.css"
-import backImg from "../assets/contact-bg.jpg"
-import phImg from "../assets/phone-icon.png"
-import maImg from "../assets/email-icon.png"
+import "../../style/Contact.css"
+import backImg from "../../assets/contact-bg.jpg"
+import phImg from "../../assets/phone-icon.png"
+import maImg from "../../assets/email-icon.png"
 
 const Contact = () => {
   return (
@@ -18,7 +18,7 @@ const Contact = () => {
 
       <div className="container">
         <div className="info">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28703.05352148686!2d-80.1250171!3d25.9391092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9acfee073549d%3A0xf4e74db7a5da487a!2sSunny%20Isles%20Beach%2C%20FL%2033160%2C%20USA!5e0!3m2!1sen!2s!4v1724055531093!5m2!1sen!2s" allowfullscreen="" loading="lazy"></iframe>
+        <iframe allowFullScreen={true} src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28703.05352148686!2d-80.1250171!3d25.9391092!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9acfee073549d%3A0xf4e74db7a5da487a!2sSunny%20Isles%20Beach%2C%20FL%2033160%2C%20USA!5e0!3m2!1sen!2s!4v1724055531093!5m2!1sen!2s" loading="lazy"></iframe>
 
           <div className="flex">
             <div className="card">

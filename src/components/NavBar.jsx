@@ -1,8 +1,13 @@
-import { useState } from 'react'
-import '../style/NavBar.css'
+import { useState } from 'react';
+import '../style/NavBar.css';
+import VisitButton from './VisitButton';
+import AddressCard from './AddressCard';
+import SocialIcons from './SocialIcons';
 
 const NavBar = () => {
-  const [active, setActive] = useState(false)
+  const [active, setActive] = useState(false);
+
+  const toggleActive = () => setActive(!active);
 
   return (
     <nav id='navbar'>
@@ -12,32 +17,38 @@ const NavBar = () => {
         </div>
 
         <div className='hold-right'>
-          <ul className={active ? "active" : ""}>
+          <ul className={`menu ${active ? "active" : ""}`}>
             <li className='active'>Home</li>
             <li>Properties</li>
             <li>Property Details</li>
             <li>Contact us</li>
+
+            <div className="sm-content">
+              <p>Schedule a visit</p>
+
+              <div className="content">
+                <AddressCard classIcon='envelope' address='info@company.com' />
+                <AddressCard classIcon='map' address='Sunny Isles Beach, FL 33160' />
+              </div>
+
+              <div className="content">
+                <SocialIcons classIcon='facebook' />
+                <SocialIcons classIcon='twitter' />
+                <SocialIcons classIcon='linkedin-in' />
+                <SocialIcons classIcon='instagram' />
+              </div>
+            </div>
           </ul>
 
-          <button
-            className='bars-holder'
-            onClick={() => setActive(!active)}>
+          <button className='bars-holder' onClick={toggleActive}>
             <i className="fa-solid fa-bars"></i>
           </button>
 
-          <div className="visit">
-            <div className="circle">
-              <i className="fa-solid fa-calendar"></i>
-            </div>
-
-            <p>Schedule a visit</p>
-          </div>
+          <VisitButton />
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
-export default NavBar
-
-
+export default NavBar;

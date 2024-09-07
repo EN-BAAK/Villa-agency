@@ -1,10 +1,10 @@
 import { useState } from 'react';
 
-import banner1 from "../assets/banner-01.jpg";
-import banner2 from "../assets/banner-02.jpg";
-import banner3 from "../assets/banner-03.jpg";
+import banner1 from "../../assets/banner-01.jpg";
+import banner2 from "../../assets/banner-02.jpg";
+import banner3 from "../../assets/banner-03.jpg";
 
-import "../style/Hero.css"
+import "../../style/Hero.css"
 
 const Hero = () => {
   const banners = [banner1, banner2, banner3];

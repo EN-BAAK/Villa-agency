@@ -1,8 +1,8 @@
-import "../style/Deal.css";
-import data from "../config/Deals.json";
-import img1 from "../assets/property-05.jpg";
-import img2 from "../assets/property-06.jpg";
-import img3 from "../assets/property-03.jpg";
+import "../../style/Deal.css";
+import data from "../../config/Deals.json";
+import img1 from "../../assets/property-05.jpg";
+import img2 from "../../assets/property-06.jpg";
+import img3 from "../../assets/property-03.jpg";
 import { useState } from "react";
 const images = [img1, img2, img3];
 const Deals = () => {
@@ -20,7 +20,7 @@ const Deals = () => {
             {data.types.map((element, index) => (
               <li
                 key={index}
-                className={index == typeIndex && "active"}
+                className={index == typeIndex ? "active" : ""}
                 onClick={() => settypeIndex(index)}
               >
                 {element}

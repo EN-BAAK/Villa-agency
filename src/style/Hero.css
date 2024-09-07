@@ -1,7 +1,7 @@
 #home {
   background-position: center center;
   background-size: cover;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 72px);
   padding: 0 80px;
   display: flex;
   align-items: center;
@@ -9,9 +9,9 @@
   position: relative;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   #home {
-    height: calc(100vh - 130px);
+    height: calc(100vh - 112px);
   }
 }
 

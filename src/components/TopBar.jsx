@@ -1,18 +1,23 @@
-import '../style/NavBar.css'
+import "../style/topbar.css"
+import AddressCard from "./AddressCard"
+import SocialIcons from "./SocialIcons"
 
 const TopBar = () => {
   return (
     <div className="top-bar">
-      <ul className="reach-out">
-        <li className="column"><span><i className="fa-solid fa-envelope"></i></span>info@company.com</li>
-        <li><span><i className="fa-solid fa-map"></i></span>Sunny Isles Beach, FL 33160</li>
-      </ul>
-      <ul className="social">
-        <li><span><i className="fa-brands fa-facebook"></i></span></li>
-        <li><span><i className="fa-brands fa-twitter"></i></span></li>
-        <li><span><i className="fa-brands fa-linkedin"></i></span></li>
-        <li><span><i className="fa-brands fa-instagram"></i></span></li>
-      </ul>
+      <div className="container">
+        <div className="address">
+          <AddressCard flex classIcon='envelope' address='info@company.com' />
+          <AddressCard flex classIcon='map' address='Sunny Isles Beach, FL 33160' />
+        </div>
+
+        <div className="brands">
+          <SocialIcons classIcon='facebook' />
+          <SocialIcons classIcon='twitter' />
+          <SocialIcons classIcon='linkedin-in' />
+          <SocialIcons classIcon='instagram' />
+        </div>
+      </div>
     </div>
   )
 }

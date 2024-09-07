@@ -1,18 +1,18 @@
+import TopBar from "./components/TopBar"
 import NavBar from "./components/NavBar"
-import Hero from "./components/Hero"
-import Featured from "./components/Featured"
-import Video from "./components/Video"
-import Deals from "./components/Deals"
-import Properties from "./components/Properties"
-import Contact from "./components/Contact"
-import Footer from "./components/Footer"
-// import TopBar from "./components/TopBar"
+import Hero from "./components/Home/Hero"
+import Featured from "./components/Home/Featured"
+import Video from "./components/Home/Video"
+import Deals from "./components/Home/Deals"
+import Properties from "./components/Home/Properties"
+import Contact from "./components/Home/Contact"
+import Footer from "./components/Home/Footer"
 
 function App() {
 
   return (
     <>
-      {/* <TopBar /> */}
+      <TopBar />
       <NavBar />
       <Hero />
       <Featured />

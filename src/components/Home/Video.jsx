@@ -1,6 +1,6 @@
-import "../style/Video.css"
-import backImg from "../assets/banner-01.jpg"
-import VideoFrame from "../assets/video-frame.jpg"
+import "../../style/Video.css"
+import backImg from "../../assets/banner-01.jpg"
+import VideoFrame from "../../assets/video-frame.jpg"
 
 const Video = () => {
   return (

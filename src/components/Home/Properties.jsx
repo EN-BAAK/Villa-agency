@@ -1,12 +1,12 @@
-import "../style/Properties.css";
-import data from "../config/properties.json"
-import Card from "./Card";
-import img1 from "../assets/property-01.jpg";
-import img2 from "../assets/property-02.jpg";
-import img3 from "../assets/property-03.jpg";
-import img4 from "../assets/property-04.jpg";
-import img5 from "../assets/property-05.jpg";
-import img6 from "../assets/property-06.jpg";
+import "../../style/Properties.css";
+import data from "../../config/properties.json"
+import Card from "../Card";
+import img1 from "../../assets/property-01.jpg";
+import img2 from "../../assets/property-02.jpg";
+import img3 from "../../assets/property-03.jpg";
+import img4 from "../../assets/property-04.jpg";
+import img5 from "../../assets/property-05.jpg";
+import img6 from "../../assets/property-06.jpg";
 
 const images = [img1, img2, img3, img4, img5, img6, img1, img5, img2]
 

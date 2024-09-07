@@ -1,0 +1,25 @@
+.top-bar {
+  border-bottom: 1px solid var(--secondColor);
+  display: none;
+}
+
+.top-bar .container {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-bar .container .address,
+.top-bar .container .brands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+@media (min-width: 768px) {
+  .top-bar {
+    display: block;
+  }
+}
