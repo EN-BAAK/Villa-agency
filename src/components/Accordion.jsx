@@ -18,7 +18,7 @@ const Accordion = ({ title, children, selectedId, id, handleClick }) => {
 Accordion.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.node), PropTypes.node]).isRequired,
-  selectedId: PropTypes.number.isRequired,
+  selectedId: PropTypes.oneOfType([PropTypes.number, PropTypes.oneOf([null])]),
   id: PropTypes.number.isRequired,
   handleClick: PropTypes.func.isRequired,
 };

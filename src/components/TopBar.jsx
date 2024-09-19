@@ -1,6 +1,6 @@
 import "../style/topbar.css"
-import AddressCard from "./AddressCard"
 import SocialIcons from "./SocialIcons"
+import AddressCard from "./AddressCard"
 
 const TopBar = () => {
   return (

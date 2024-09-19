@@ -1,4 +1,4 @@
-import "../../style/Contact.css"
+import "../../style/Home/Contact.css"
 import backImg from "../../assets/contact-bg.jpg"
 import phImg from "../../assets/phone-icon.png"
 import maImg from "../../assets/email-icon.png"

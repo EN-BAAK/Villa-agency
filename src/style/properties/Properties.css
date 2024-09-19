@@ -1,0 +1,162 @@
+#Properties .container {
+  padding: 50px 0;
+}
+
+#Properties .container .bullets-holder {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#Properties .container .bullets-holder .bullet {
+  background-color: var(--thirdColor);
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+#Properties .container .bullets-holder .bullet:hover,
+#Properties .container .bullets-holder .bullet.active {
+  background-color: var(--mainColor);
+}
+
+#Properties .container .content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+#Properties .container .content .card {
+  padding: 20px;
+  box-shadow: 1px 1px 15px 0 #eee;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+}
+
+#Properties .container .content .card img {
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#Properties .container .content .card .card-header {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#Properties .container .content .card .card-header .type {
+  background-color: var(--mainTransparent);
+  padding: 2px 6px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-weight: 600;
+  color: var(--thirdColor);
+}
+
+#Properties .container .content .card .card-header .cast {
+  font-weight: bold;
+  color: var(--mainColor);
+}
+
+#Properties .container .content .card h3 {
+  margin-bottom: 15px;
+}
+
+#Properties .container .content .card .card-body {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+#Properties .container .content .card .card-body .break {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#Properties .container .content .card .card-body p {
+  color: var(--secondColor);
+}
+
+#Properties .container .content .card .card-body p span {
+  font-weight: 600;
+  color: var(--thirdColor);
+}
+
+#Properties .container .content .card .card-footer button {
+  background-color: var(--thirdColor);
+  margin: 0 auto;
+  padding: 6px 20px;
+  border: none;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  display: block;
+  color: #fff;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  cursor: pointer;
+}
+
+#Properties .container .content .card .card-footer button:hover {
+  background-color: var(--mainColor);
+}
+
+#Properties .container .pagination {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+#Properties .container .pagination .bullet {
+  background-color: var(--thirdColor);
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#Properties .container .pagination .bullet.active {
+  background-color: var(--mainColor);
+}

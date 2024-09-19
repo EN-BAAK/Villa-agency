@@ -3,10 +3,12 @@ import '../style/NavBar.css';
 import VisitButton from './VisitButton';
 import AddressCard from './AddressCard';
 import SocialIcons from './SocialIcons';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   const [active, setActive] = useState(false);
 
+  const isActiveLink = (path) => location.pathname.toLowerCase() === path;
   const toggleActive = () => setActive(!active);
 
   return (
@@ -18,8 +20,12 @@ const NavBar = () => {
 
         <div className='hold-right'>
           <ul className={`menu ${active ? "active" : ""}`}>
-            <li className='active'>Home</li>
-            <li>Properties</li>
+            <li className={isActiveLink("/") ? "active" : ""}>
+              <Link to={"/"} >Home</Link>
+            </li>
+            <li className={isActiveLink("/properties") ? "active" : ""}>
+              <Link to={"/properties"}>Properties</Link>
+            </li>
             <li>Property Details</li>
             <li>Contact us</li>
 

@@ -12,7 +12,7 @@ const AddressCard = ({ classIcon, address, flex = false }) => {
 AddressCard.propTypes = {
   classIcon: PropTypes.string.isRequired,
   address: PropTypes.string.isRequired,
-  flex: PropTypes.string,
+  flex: PropTypes.bool,
 };
 
 export default AddressCard;

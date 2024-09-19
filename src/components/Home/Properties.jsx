@@ -1,4 +1,4 @@
-import "../../style/Properties.css";
+import "../../style/Home/Properties.css"
 import data from "../../config/properties.json"
 import Card from "../Card";
 import img1 from "../../assets/property-01.jpg";

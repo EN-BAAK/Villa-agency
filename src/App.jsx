@@ -1,25 +1,29 @@
 import TopBar from "./components/TopBar"
 import NavBar from "./components/NavBar"
-import Hero from "./components/Home/Hero"
-import Featured from "./components/Home/Featured"
-import Video from "./components/Home/Video"
-import Deals from "./components/Home/Deals"
-import Properties from "./components/Home/Properties"
-import Contact from "./components/Home/Contact"
 import Footer from "./components/Home/Footer"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Home from "./screens/Home"
+import Properties from "./screens/Properties"
 
 function App() {
 
   return (
     <>
       <TopBar />
-      <NavBar />
-      <Hero />
-      <Featured />
-      <Video />
-      <Deals />
-      <Properties />
-      <Contact />
+      <Router>
+        <Routes>
+          <Route path="/" element={
+            <>
+              <NavBar />
+              <Home />
+            </>} />
+          <Route path="/properties" element={
+            <>
+              <NavBar />
+              <Properties />
+            </>} />
+        </Routes>
+      </Router>
       <Footer />
     </>
   )

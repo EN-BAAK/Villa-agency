@@ -1,4 +1,4 @@
-import "../../style/Deal.css";
+import "../../style/Home/Deal.css"
 import data from "../../config/Deals.json";
 import img1 from "../../assets/property-05.jpg";
 import img2 from "../../assets/property-06.jpg";

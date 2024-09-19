@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import "../../style/Featured.css";
+import "../../style/Home/Featured.css"
 import feaImg from "../../assets/featured.jpg";
 import feaIcon from "../../assets/featured-icon.png";
 import ic1 from "../../assets/info-icon-01.png";

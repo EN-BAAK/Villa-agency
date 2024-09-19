@@ -1,4 +1,4 @@
-import "../../style/Video.css"
+import "../../style/Home/Video.css"
 import backImg from "../../assets/banner-01.jpg"
 import VideoFrame from "../../assets/video-frame.jpg"
 
