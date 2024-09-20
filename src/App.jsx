@@ -4,6 +4,7 @@ import Footer from "./components/Home/Footer"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Home from "./screens/Home"
 import Properties from "./screens/Properties"
+import PropertyDetails from "./screens/PropertyDetails"
 
 function App() {
 
@@ -21,6 +22,11 @@ function App() {
             <>
               <NavBar />
               <Properties />
+            </>} />
+          <Route path="/property-details" element={
+            <>
+              <NavBar />
+              <PropertyDetails />
             </>} />
         </Routes>
       </Router>

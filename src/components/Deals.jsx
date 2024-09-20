@@ -1,11 +1,11 @@
-import "../../style/Home/Deal.css"
-import data from "../../config/Deals.json";
-import img1 from "../../assets/property-05.jpg";
-import img2 from "../../assets/property-06.jpg";
-import img3 from "../../assets/property-03.jpg";
-import VisitButton from "../VisitButton"
+import "../style/Deal.css"
+import data from "../config/Deals.json";
+import img1 from "../assets/property-05.jpg";
+import img2 from "../assets/property-06.jpg";
+import img3 from "../assets/property-03.jpg";
+import VisitButton from "./VisitButton"
 import { useState } from "react";
-import Specifications from "../Specifications";
+import Specifications from "./Specifications";
 const images = [img1, img2, img3];
 const Deals = () => {
   const [typeIndex, settypeIndex] = useState(0);

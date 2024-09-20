@@ -26,7 +26,9 @@ const NavBar = () => {
             <li className={isActiveLink("/properties") ? "active" : ""}>
               <Link to={"/properties"}>Properties</Link>
             </li>
-            <li>Property Details</li>
+            <li className={isActiveLink("/property-details") ? "active" : ""}>
+              <Link to={"/property-details"}>Property Details</Link>
+            </li>
             <li>Contact us</li>
 
             <div className="sm-content">
