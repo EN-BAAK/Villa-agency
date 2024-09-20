@@ -5,7 +5,7 @@ const Title = ({ path }) => {
   return (
     <div className='Title'>
       <div>
-        <p>Home / {path}</p>
+        <p>Home/ {path}</p>
         <h1>{path}</h1>
       </div>
     </div>

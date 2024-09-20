@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
 import Home from "./screens/Home"
 import Properties from "./screens/Properties"
 import PropertyDetails from "./screens/PropertyDetails"
+import ContactUs from "./screens/ContactUs"
 
 function App() {
 
@@ -27,6 +28,11 @@ function App() {
             <>
               <NavBar />
               <PropertyDetails />
+            </>} />
+          <Route path="/contact" element={
+            <>
+              <NavBar />
+              <ContactUs />
             </>} />
         </Routes>
       </Router>

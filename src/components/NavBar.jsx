@@ -21,15 +21,17 @@ const NavBar = () => {
         <div className='hold-right'>
           <ul className={`menu ${active ? "active" : ""}`}>
             <li className={isActiveLink("/") ? "active" : ""}>
-              <Link to={"/"} >Home</Link>
+              <Link onClick={() => setActive(false)} to={"/"} >Home</Link>
             </li>
             <li className={isActiveLink("/properties") ? "active" : ""}>
-              <Link to={"/properties"}>Properties</Link>
+              <Link onClick={() => setActive(false)} to={"/properties"}>Properties</Link>
             </li>
             <li className={isActiveLink("/property-details") ? "active" : ""}>
-              <Link to={"/property-details"}>Property Details</Link>
+              <Link onClick={() => setActive(false)} to={"/property-details"}>Property Details</Link>
             </li>
-            <li>Contact us</li>
+            <li className={isActiveLink("/contact") ? "active" : ""}>
+              <Link onClick={() => setActive(false)} to={"/contact"}>Contact Us</Link>
+            </li>
 
             <div className="sm-content">
               <p>Schedule a visit</p>
